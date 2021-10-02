@@ -1,0 +1,165 @@
+.container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: auto;
+}
+
+.fixed_top{
+    position:absolute;
+    background: #67849d;
+    overflow: hidden;
+    width: 500px;
+    height: 700px;
+    margin-top: -250px;
+    transform: translateZ(0) rotate(45deg);
+    margin-left: -200px;
+}
+.columns{
+    display: block;
+    margin-left: 3em;
+}
+.column{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+.text_header{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    margin-top:2em;
+    position: absolute;
+    font-size: 27px;
+    font-family: sans-serif;
+    /* padding-bottom: 10px; */
+    height: 210px;
+}
+.text_header h1{
+    color: #FFF;
+    margin-bottom: auto;
+}
+.image{
+    
+    margin-top: 13em;
+}
+#email{
+    float: right;
+    position: relative;
+    margin-right: 1em;
+    margin-top: 3em;
+    font-size: x-large;
+}
+#section2{
+    margin-top: 11em;
+}
+#section2 h1{
+    border-bottom: 1px solid gray;
+    padding-top: 1em;
+}
+#section3{
+    background: cadetblue;
+    margin-top: 2em;
+    width: 100%;
+    height: 250px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+#section3 a{
+    text-decoration: underline;
+    font-weight: 300;
+}
+#section4{
+    width: 90%;
+    margin-inline: auto;
+    margin-top:3em;
+}
+#section5{
+width: 100%;
+height: 100%;
+background: cadetblue;
+margin-top: 2em;
+padding: 3em;
+
+}
+#section5>h1{
+    padding-left: 3em;
+    font-weight: bolder;
+    color: white;
+    padding-top: 1em;
+}
+@media only screen and (min-width: 992px){
+ .fixed_top{
+     margin-left: -10px;
+     margin-top: -150px;
+ }
+    .columns{
+     display: flex;
+ }   
+ .column{
+     display: flex;
+ }
+ .text_header{
+     margin-left: 7em;
+     margin-top: 5em;
+     padding-top: 0em;
+ }
+ .image{
+    margin-top: 10em;
+    margin-inline-start: auto;
+    margin-right: 9em;
+    padding: 3em;
+    height: 200px;
+    width: 300px;
+ }     
+ #email{
+     margin-right: 4em;
+ }
+ #section2{
+     width: 90%;
+     margin-inline: auto;
+    margin-top: 17em;
+    
+ }
+ .fixed_top{
+     width: 800px;
+     height: 700px;
+ }
+ #section4{
+     width: 90%;
+     margin-inline: auto;
+     margin-top:3em;
+ }
+}
+@media only screen and (min-width: 768px) and (max-width:992px){
+.columns{
+    display: flex;
+}   
+.column{
+    display: flex;
+}
+.text_header{
+    margin-left: 0em;
+    margin-top: 5em;
+    padding-top: 0em;
+}
+.image{
+   margin-top: 7em;
+   margin-inline-start: auto;
+   margin-right: 1em;
+   padding: 3em;
+   height: 200px;
+   width: 300px;
+}
+#section2{
+    margin-top: 17em;
+}
+.fixed_top{
+    width: 800px;
+    height: 700px;
+}
+}
